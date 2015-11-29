@@ -1,0 +1,416 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Reset */
+
+/* Start of Custom Styles */
+/*.content {
+	padding: 0 15px;
+	margin: 0 auto;
+	width: 80%;
+}*/
+/* Navigation Section */
+
+.top-navigation {
+	background-color: #fff249;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	border-bottom: 1px solid #d9d9d9;
+	height: 54px;
+/*    -webkit-transition-property: top;
+    -webkit-transition-duration: .2s;*/
+/*    top: 0;
+    font-size: 1em;
+    line-height: 20px;*/
+    
+}
+
+.top-navigation .links {
+	float: right;
+	font-family: 'Lato', sans-serif; 
+	color: #8D883B; 
+	font-size: 1em; 
+	margin-top: 0.2em;
+	margin-bottom: 0.7em;
+	-webkit-font-smoothing: antialiased;
+/*	border: 1px solid blue;*/
+}
+
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 1em;
+	margin-top: 1em;
+/*	border: 1px solid red;*/
+
+}
+
+.last {
+	border-left: 1px solid #ddd043;
+	padding-left: 1em;
+}
+
+.top-navigation .links li a {
+	color: #8D883B; 
+	text-decoration: none;
+}
+
+.top-navigation .links li a:hover {
+	cursor: pointer;
+	color: #716E36;
+}
+
+.top-navigation .logoimg {
+	float: left;
+	font-family: 'Lato', sans-serif; 
+	color: #263476; 
+	font-size: 1em; 
+	margin: 0em;
+	padding: 0em;
+	-webkit-font-smoothing: antialiased;
+/*	border: 1px solid blue;*/
+}
+
+.top-navigation .logoimg li {
+	display: inline-block;
+	margin: 0;
+/*	border: 1px solid red;*/
+	vertical-align: middle;
+}
+
+.top-navigation img {
+	max-width: 300px;
+	padding: 0.6em 0 0.5em 0;
+/*	border: 1px solid white;*/
+	/*border-radius: 25%;*/
+}
+
+.logo {
+	height: 35px;
+	margin-right: 1em;
+	/*max-width: 200px;*/
+/*	border: 1px solid red;*/
+}
+
+
+.logoimg .logo-ext {
+	border-left: 1px solid #ddd043;
+	padding-left: 1em;
+	margin-bottom: 0.5em;
+
+}
+
+.content {
+	max-width: 58rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	padding: 0;
+}
+
+.introduction {
+	background-image: url("../images/rio-sidewalk.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 30rem;
+	overflow: auto;
+}
+
+.introduction .transparent-background {
+	margin-top: 9rem;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding: 1rem;
+	background-color: #FFFDF6;
+	border-radius: 10px;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+    color: #FFFDF6;
+/*    font-weight: 500;*/
+}
+
+.introduction .transparent-background h1 {
+	margin-top: 1rem;
+	font-size: 3rem;
+}
+.introduction .transparent-background h1, .introduction .transparent-background h3 {
+	font-family: 'Lato', sans-serif; 
+	color: #263476;
+	text-align: center;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased
+}
+.introduction .transparent-background h3 {
+	font-size: 2.2rem;
+	font-weight: 400;
+	-webkit-margin-before: 0.3em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+button {
+	width: 9.688rem;
+/*	background-color: #3E52A1;
+	border-color: #f15a29;*/
+/*	text-shadow: none;
+	border-style: none;*/
+	border-radius: 8px;
+	padding: 1rem 1.5rem;
+/*	color: white;*/
+	font-size: 1.5rem;
+	display: block;
+	margin: 0 auto;
+
+
+    background-color: #3E52A1;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#4055A5),color-stop(100%,#283077));
+    background-image: -webkit-linear-gradient(#3E52A1,#2D3277);
+    background-image: -moz-linear-gradient(#3E52A1,#2D3277);
+    background-image: -o-linear-gradient(#3E52A1,#2D3277);
+    background-image: linear-gradient(#3E52A1,#2D3277);
+    -webkit-box-shadow: inset 0 1px #8EA2DF;
+    box-shadow: inset 0 1px #8EA2DF;
+    border: 1px solid #2D3277;
+    color: #FFF;
+}
+
+button:hover {
+	background-color: #d9400e;
+	border-color: #cf3d0e;
+	cursor: pointer;
+}
+
+.landing-question {
+	font-family: Arial, 'Lato', sans-serif; 
+	font-size: 2rem;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	color: #666666;
+	text-align: left;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased
+}
+
+.landing-answer {
+	font-family: Arial, 'Lato', sans-serif; 
+	font-size: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	color: #666666;
+	text-align: left;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.2rem;
+	letter-spacing: 0.02rem;
+}
+
+.landing-answer ul {
+	list-style-type: square;
+	padding-left: 1rem;
+}
+
+.landing-answer li {
+	margin-bottom: 1rem;
+}
+
+.reasons2 {
+/*  border: 1px solid red;*/
+/*  border-spacing: 2rem;*/
+/*  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;*/
+/*  padding: 1rem 1rem 1rem 1rem;*/
+/*  margin: 1rem;*/
+/*  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;*/
+}
+
+/*.reasons2 th {
+	padding: 1rem;
+
+}
+*/
+.table-columns {
+/*	background-color:red;*/
+	width: 30%;
+}
+
+.reasons-icon2 {
+    font-size: 4rem;
+    padding: 1rem;
+/*    margin: 1rem;*/
+    font-color: white;
+/*    border: 1px solid blue;*/
+    text-align: center;
+    vertical-align: center;
+/*    background-color: gray;
+	border-radius: 50%;
+	width: 2.5rem;*/
+/*	height: 1.25rem;
+	margin: 1.25rem 5px;*/
+/*	border: 1px solid rgb(234, 235, 236);*/
+
+}
+
+.reasons-icon2 i {
+/*    font-size: 4rem;
+    padding: 1rem;
+    margin: 1rem;
+    font-color: white;
+    border: 1px solid blue;*/
+    background-color: #3A87AD;
+	border-radius: 50%;
+	width: 8rem;
+	height: 4rem;
+	padding: 2rem 0px 2rem 0px;
+	vertical-align: center;
+	text-align: center;
+/*	width: 2.5rem;*/
+/*	height: 1.25rem;
+	margin: 1.25rem 5px;*/
+/*	border: 1px solid rgb(234, 235, 236);*/
+
+}
+
+.fa i {
+	position: relative;
+	vertical-align: middle;
+	top: 10px;
+/*	left: 1px;*/
+}
+
+
+.reasons-text {
+	font-family: Arial, 'Lato', sans-serif; 
+	font-size: 1rem;
+	padding: 1.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+/*	margin-left: 4rem;
+	margin-right: 4rem;*/
+	color: #666666;
+	text-align: center;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.2rem;
+/*	letter-spacing: 0.02rem;*/
+}
+
+a {
+	text-decoration: none;
+	color: #0637B3;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color:purple;
+}
+
+.content-footer {
+	margin: 8em;
+	border-top: 1px solid #ECEBEC;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	background-color: #F8F8F8;
+	width: 100%;
+	height: 60px;
+/*	background-size: cover;*/
+/*	position: fixed;*/
+/*	z-index: 9999;*/
+/*	height: 54px;*/
+
+}
+
+
+.each-footer-links {
+	float: left;
+	font-family: 'Lato', sans-serif; 
+	width: 100%;
+	color: #0637B3; 
+	font-size: 0.8em; 
+	margin-top: 0.2em;
+	margin-bottom: 0.7em;
+	-webkit-font-smoothing: antialiased;
+/*	border: 1px solid red;*/
+}
+
+.each-footer-links li {
+	display: inline-block;
+	margin-left: 0;
+	margin-top: 0.3em;
+	margin-right: 1em;
+/*	border: 1px solid blue;
+}*/
+}
+
+.copyright {
+/*	float: left;*/
+/*	margin-top: 3em;*/
+/*	display: block;*/
+	font-family: 'Lato', sans-serif; 
+	color: #666666; 
+	text-align: left;
+	font-size: 0.8em; 
+	margin-top: 0.2em;
+	margin-bottom: 0.7em;
+	-webkit-font-smoothing: antialiased;
+/*	border: 1px solid green;*/
+}
