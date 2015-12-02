@@ -1,24 +1,49 @@
 $(document).ready(function() {
+
+	$.getJSON('https://guibastos.github.io/cbt-landing/js/qna.json', function(data){
 	
-var qna = {};
-$.getJSON('/json/qna.json', function(data){
-    var qna = data
-	for (var i=0;i<qna.length;i++)	{
-		$('.questions-answers').append('<div class = "section-title">'+qna[i]["Topic"]+'</div>');
-			for (var w=0;w<qna[i]["QuestionAnswers"].length;w++) 	{
-				$('.questions-answers').append('<div class="question"><ul class = "test-block"><li class = "items-list"><i class="fa fa-caret-right"></i><span class="question-text">'+qna[i]["QuestionAnswers"][w]["Question"]+'</span></li></ul></div><div class="answer">'+qna[i]["QuestionAnswers"][w]["Answer"]+'</div>');
-							}
-							};
+		$.each(data, function(indx, json){
+			$('.questions-answers').append(
+			'<div class = "section-title">'+json.Topic+'</div>');
+			for (var w=0;w<json.QuestionAnswers.length;w++){
+				$('.questions-answers').append('<div class="question"><ul class = "test-block"><li class = "items-list"><i class="fa fa-caret-right"></i><span class="question-text">'+json.QuestionAnswers[w]["Question"]+'</span></li></ul></div><div class="answer">'+json.QuestionAnswers[w]["Answer"]+'</div>');
+			}
+		});		
 
-	    $('.question').on('click', function() {
+		$('.question').each(function(){
+		   $(this).on('click', function() {
+				// console.log("venha");
+				$(this).find("i").toggleClass("fa-caret-right fa-caret-down");
+				$(this).next('.answer').toggle();    		
+			});
+	   });
+	});
 
-	    	$(this).find("i").toggleClass("fa-caret-right fa-caret-down");
-	    	$(this).next('.answer').toggle();    		
-	    });
+   
+});
 
 
 
-}));
+
+// var qna = {};
+// $.getJSON('/json/qna.json', function(data){
+//     var qna = data
+// 	for (var i=0;i<qna.length;i++)	{
+// 		$('.questions-answers').append('<div class = "section-title">'+qna[i]["Topic"]+'</div>');
+// 			for (var w=0;w<qna[i]["QuestionAnswers"].length;w++) 	{
+// 				$('.questions-answers').append('<div class="question"><ul class = "test-block"><li class = "items-list"><i class="fa fa-caret-right"></i><span class="question-text">'+qna[i]["QuestionAnswers"][w]["Question"]+'</span></li></ul></div><div class="answer">'+qna[i]["QuestionAnswers"][w]["Answer"]+'</div>');
+// 							}
+// 							};
+
+// 	    $('.question').on('click', function() {
+
+// 	    	$(this).find("i").toggleClass("fa-caret-right fa-caret-down");
+// 	    	$(this).next('.answer').toggle();    		
+// 	    });
+
+
+
+// }));
 
 // console.log("venha");
 
