@@ -18,7 +18,7 @@ $.getJSON('/json/qna.json', function(data){
 
 
 
-});
+}));
 
 // console.log("venha");
 
