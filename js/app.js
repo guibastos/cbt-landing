@@ -1,11 +1,29 @@
 $(document).ready(function() {
 	
 var qna = {};
-$.getJSON('https://www.dev.dabee.com/si/json/qna.json', function(data){
-     $.each(data, function(indx, json){
-   qna = json;
-   });
-    });
+$.getJSON('/json/qna.json', function(data){
+    var qna = data
+	for (var i=0;i<qna.length;i++)	{
+		$('.questions-answers').append('<div class = "section-title">'+qna[i]["Topic"]+'</div>');
+			for (var w=0;w<qna[i]["QuestionAnswers"].length;w++) 	{
+				$('.questions-answers').append('<div class="question"><ul class = "test-block"><li class = "items-list"><i class="fa fa-caret-right"></i><span class="question-text">'+qna[i]["QuestionAnswers"][w]["Question"]+'</span></li></ul></div><div class="answer">'+qna[i]["QuestionAnswers"][w]["Answer"]+'</div>');
+							}
+							};
+
+	    $('.question').on('click', function() {
+
+	    	$(this).find("i").toggleClass("fa-caret-right fa-caret-down");
+	    	$(this).next('.answer').toggle();    		
+	    });
+
+
+
+});
+
+// console.log("venha");
+
+// console.log(qna[1]["QuestionAnswers"].length);
+// console.log(qna.length);
 
 // var qna = [	{	Topic: "MercadoLibre", 
 // 				QuestionAnswers: [
@@ -40,23 +58,3 @@ $.getJSON('https://www.dev.dabee.com/si/json/qna.json', function(data){
 // 				]
 // 			}
 // 			];
-
-
-console.log(qna[1]["QuestionAnswers"][4]["Answer"]);
-for (var i=0;i<qna.length;i++)	{
-	$('.questions-answers').append('<div class = "section-title">'+qna[i]["Topic"]+'</div>');
-		for (var w=0;w<qna[i]["QuestionAnswers"].length;w++) 	{
-			$('.questions-answers').append('<div class="question"><ul class = "test-block"><li class = "items-list"><i class="fa fa-caret-right"></i><span class="question-text">'+qna[i]["QuestionAnswers"][w]["Question"]+'</span></li></ul></div><div class="answer">'+qna[i]["QuestionAnswers"][w]["Answer"]+'</div>');
-						}
-						};
-
-    $('.question').on('click', function() {
-    	// console.log("venha");
-    	$(this).find("i").toggleClass("fa-caret-right fa-caret-down");
-    	$(this).next('.answer').toggle();    		
-    });
-
-console.log(qna[1]["QuestionAnswers"].length);
-console.log(qna.length);
-
-});
