@@ -4,7 +4,7 @@
 					{"Question": "What is MELI CBT?","Answer": "Meli CBT is the department that is in charge of Cross-Border trade for MercadoLibre."},
 					{"Question": "What countries are enabled for MELI CBT?","Answer": "Currently Cross-Border Trade (CBT) is enabled in Brazil and Mexico. In a few months, we will be enabling Chile and Colombia. Other countries will follow, but our goal is to enable cross-border trade in all MercadoLibre countries."	},
 					{"Question": "What is Dabee?","Answer": "Dabee is a fully owned subsidiary of Mercado Liber in the United States. You might find references of Dabee in our documentation and/or legal documents."}
-				],
+				]
 			},
 
 	{	"Topic": "Registration",
@@ -18,7 +18,7 @@
 					{"Question": "Can I get an account manager?","Answer": "Our Cross-Border Trade Program (MELI CBT) is relatively new and we do not have an account management team yet. Please be patient with us as we build the team. We are working on it."		},
 					{"Question": "Is there a number I can call to ask a few questions?","Answer": "We don't have phone support, but feel free to email us at XXX@mercadolibre.com."	},
 					{"Question": "I registered, but I am getting an error message that says: 'Attention Needed!!  Account has not been activated.  Please contact MELI CBT.'","Answer": "This happened because we still need to do some account setup for you. Please email XXX@dabee.com to get this resolved."}
-				],
+				]
 			},
 
 	{	"Topic": "Fees",
