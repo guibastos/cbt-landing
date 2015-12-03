@@ -466,3 +466,11 @@ button:hover {
 	font-size: 1rem;
 	-webkit-font-smoothing: antialiased;
 }
+
+.answer li a {
+	color: #0637B3;
+}
+
+.answer li a:hover{
+	text-decoration: underline;
+}
