@@ -467,10 +467,10 @@ button:hover {
 	-webkit-font-smoothing: antialiased;
 }
 
-.answer li a {
+.answer a {
 	color: #0637B3;
 }
 
-.answer li a:hover{
+.answer a:hover{
 	text-decoration: underline;
 }
