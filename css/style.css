@@ -344,6 +344,19 @@ button:hover {
 	margin-right: 1em;
 }
 
+.each-footer-links li a {
+	color: #0637B3;
+}
+
+.each-footer-links li a:hover{
+	text-decoration; underline;
+}
+
+.last-footer {
+	border-left: 1px solid #C6C6C6;
+	padding-left: 1em;
+}
+
 .copyright {
 	font-family: 'Lato', sans-serif; 
 	color: #666666; 
