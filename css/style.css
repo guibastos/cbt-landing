@@ -49,6 +49,18 @@ table {
 
 /* End of Reset */
 
+a {
+	color:#FFF;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+
+
 /* Start of Custom Styles */
 
 .top-navigation {
