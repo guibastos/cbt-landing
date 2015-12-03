@@ -58,6 +58,7 @@ table {
 	z-index: 9999;
 	border-bottom: 1px solid #d9d9d9;
 	height: 54px;
+	top: 0px;
 }
 
 .top-navigation .links {
@@ -341,9 +342,9 @@ button:hover {
 	-webkit-font-smoothing: antialiased;
 }
 
-.pagetitle {
+/*.pagetitle {
 	border: 1px solid red;
-}
+}*/
 
 .pagetitle h1 {
 	font-family: 'Lato', Arial, sans-serif;
