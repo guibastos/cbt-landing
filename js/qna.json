@@ -33,7 +33,7 @@
 	{ "Topic": "Product Prices", "QuestionAnswers": [
 		{"Question": "Will my products be displayed in US dollars?","Answer": "No, your products will be shown in the local currency. (e.g., Brazilian reais in Brazil, Mexican pesos in Mexico, etc.)."},
 		{"Question": "Will I receive payments in dollars or local currency?","Answer": "You will receive payments in US dollars."},
-		{"Question": "Can I receive payments in a country other than the US?","Answer": "Yes, if you use a service that provides you with a US bank account. To this end, we have partnered with Payoneer."},
+		{"Question": "Can I receive payments in a country other than the US?","Answer": "Yes, if you use a service that provides you with a US bank account. To this end, we have partnered with <a href='http://payoneer.realcommerce.co.il/en/mercado-libre/'>Payoneer</a>."},
 		{"Question": "How do you calculate price to end user?","Answer": "We start with your price in dollars, add all costs associated with the sale, including MercadoLibre fees, and multiply by our daily conversion rate: (your price +  domestic shipping (if any) + international shipping + customs/taxes (if any) + (MercadoLibre fees) * foreign exchange conversion rate"},
 		{"Question": "How do I know if my products are competitive?","Answer": "We suggest you look at your listings in local markets and perform similar searches to see if you find similar products being sold by local sellers."},
 		{"Question": "What does 12x sem juros mean?","Answer": "It is payments by installments. It is typical in Latin America for e-commerce companies to offer the option for buyers to finance their purchases in installments."},
