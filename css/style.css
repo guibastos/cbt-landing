@@ -480,3 +480,7 @@ button:hover {
 .questions-answers .answer a:hover {
 	text-decoration: underline;
 }
+
+.italic {
+	font-style: italic;
+}
