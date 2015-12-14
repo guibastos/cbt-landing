@@ -393,7 +393,7 @@ button:hover {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	color: black;
-	display: block;
+	display: inline-block;
 	float: left;
 	text-align: left;
 	font-weight: 700;
